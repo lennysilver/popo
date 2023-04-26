@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>work6</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+function show_Palindrome(txt) {
+
+    const lenght = txt.length;
+
+    for (let x = 0; x < lenght / 2; x++) {
+
+        if (txt[x] !== txt[lenght - 1 - x]) {
+            return 'It is not a palindrome';
+        }
+    }
+    return 'It is a palindrome';
+}
+const txt = prompt('Enter a string: ');
+const value = show_Palindrome(txt);
+
+console.log(value);
+</script>
+</body>
+</html>

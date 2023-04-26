@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <title>work2</title>
+</head>
+<body>
+   
+   <script type="text/javascript">
+             // A program to reverse a string using the For Loop
+
+function reversingString(str) {
+        
+    // empty string
+    let aNewString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        aNewString += str[i];
+    }
+    return aNewString;
+}
+        
+// take input from the user
+const string = prompt('Enter a string: ');
+        
+const result = reversingString(string);
+console.log(result);
+   </script>
+</body>
+</html>

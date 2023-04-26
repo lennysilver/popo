@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>work3</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var names = ['Shema', 'Celine', 'Belynda', 'Danny', 'Ben']
+
+function show_longName(name) {
+    var max = name[0].length;
+    name.map(item => max = Math.max(max, item.length));
+    Str = name.filter(item => item.length == max);
+    return Str;
+}
+
+console.log("Longest String in array: ", show_longName(names))
+  </script>
+
+</body>
+</html>

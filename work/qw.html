@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>work1</title>
+ 
+</head>
+  
+<body>
+  <h2>
+  The even numbers follow 1 to 10 
+  </h2>
+</body>
+  
+<script type="text/javascript">
+ let numS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sumEvens = arr => arr.filter(e => !(e % 2)).reduce((a, b) => a + b);
+
+console.log(sumEvens(numS));
+</script>
+</html>
+
+
+
